@@ -1,6 +1,6 @@
 - name: First program
   hosts: all
   tasks:
-    - name: Printing hello ansible
+    - name: Print hello ansible
       ansible.builtin.debug:
-        msg:"Hello Ansible"
+        msg:Hello Ansible
