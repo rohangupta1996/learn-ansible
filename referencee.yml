@@ -8,3 +8,7 @@
     - name: Printing the output
       ansible.builtin.debug:
         msg: "{{Output}}"
+
+    - name: Print particular thing from previous output
+      ansible.builtin.debug:
+        msg: "{{Output.rc}}"
