@@ -1,0 +1,8 @@
+- name: Play level Variable
+  hosts: localhost
+  vars:
+    URL: www.devops.online
+  tasks:
+    - name: Printing website
+      ansible.builtin.debug:
+        msg: my url = {{URL}}
