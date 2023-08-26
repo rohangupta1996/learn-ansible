@@ -9,6 +9,10 @@
       ansible.builtin.debug:
         msg: "{{Output}}"
 
-    - name: Print particular thing from previous output
+    - name: Taking particular thing from previous output
       ansible.builtin.set_fact:
-        msg: "{{Output.rc}}"
+        status: "{{Output.rc}}"
+
+    - name: Print
+      ansible.builtin.debug:
+        msg: "{{status}}"
