@@ -1,0 +1,9 @@
+- name: Storing output
+  hosts: localhost
+  tasks:
+    - name: Reference of output
+      Register: Output
+
+    - name: Printing the output
+      ansible.builtin.debug:
+        msg: {{output}}
