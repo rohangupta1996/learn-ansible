@@ -2,6 +2,7 @@
   hosts: localhost
   tasks:
     - name: Reference of output
+      ansible.builtin.shell: uptime
       Register: Output
 
     - name: Printing the output
