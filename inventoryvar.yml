@@ -3,4 +3,4 @@
   tasks:
     - name: Print variable of inventory file
       ansible.builtin.debug:
-        msg: myurl= {{URL}}
+        msg: url= {{URL}}
