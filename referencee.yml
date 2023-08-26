@@ -10,5 +10,5 @@
         msg: "{{Output}}"
 
     - name: Print particular thing from previous output
-      ansible.builtin.debug:
+      ansible.builtin.set_fact:
         msg: "{{Output.rc}}"
