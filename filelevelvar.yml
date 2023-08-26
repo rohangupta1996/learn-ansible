@@ -1,7 +1,7 @@
 - name: File level variable
   hosts: localhost
   vars_file:
-    unknown.yml
+    - unknown.yml
   tasks:
     - name: Printing file variable
       ansible.builtin.debug:
