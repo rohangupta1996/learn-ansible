@@ -1,0 +1,8 @@
+- name: Task level variable
+  hosts: localhost
+  tasks:
+    - name: Print task level Variables
+      vars:
+        URL: task.com
+      ansible.builtin.debug:
+        msg: url== {{URL}}
