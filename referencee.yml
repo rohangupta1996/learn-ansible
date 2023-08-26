@@ -3,7 +3,7 @@
   tasks:
     - name: Get uptime output
       ansible.builtin.shell: uptime
-      Register: Output
+      register: Output
 
     - name: Printing the output
       ansible.builtin.debug:
